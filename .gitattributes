@@ -1,0 +1,11 @@
+# Copyright (C) 2026 Advanced Micro Devices, Inc. All rights reserved.
+# SPDX-License-Identifier: MIT
+
+# Normalize text files to LF, so the shell scripts baked into the image keep
+# working when the repository is checked out on Windows.
+* text=auto eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.mp4  binary

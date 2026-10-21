@@ -1,0 +1,25 @@
+# Copyright (C) 2026 Advanced Micro Devices, Inc. All rights reserved.
+# SPDX-License-Identifier: MIT
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Notebook checkpoint snapshots
+.ipynb_checkpoints/
+
+# Local run artifacts the notebooks write next to themselves
+/outputs/
+/agent_run.mp4
+
+# Leftovers from regenerating the recorded RHO study (see README)
+/recorded_results/videos/
+/recorded_results/candidate/
+
+# Local editor and OS metadata
+.DS_Store
+.vscode/
+.idea/

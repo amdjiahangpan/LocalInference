@@ -1,0 +1,40 @@
+# The build context is this repository and the Dockerfile copies all of it
+# into /ryzers/notebooks. Keep the repository tooling and anything a local run
+# leaves behind in the tree out of the image.
+
+# Repository tooling, not course content
+.git
+.gitignore
+.gitattributes
+Dockerfile
+.dockerignore
+build.sh
+run.sh
+
+# Local run artifacts the notebooks write next to themselves
+outputs
+agent_run.mp4
+
+# Leftovers from regenerating the recorded RHO study (see README)
+recorded_results/videos
+recorded_results/candidate
+
+# Python bytecode and tool caches
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.ruff_cache
+**/.mypy_cache
+
+# Notebook checkpoint snapshots
+**/.ipynb_checkpoints
+
+# Local editor and OS metadata
+**/.DS_Store
+**/.vscode
+**/.idea
+
+# Temporary files
+**/*.tmp
+**/*.swp
+**/*.swo
